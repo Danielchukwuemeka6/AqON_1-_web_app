@@ -31,10 +31,10 @@ import io
 
 
 
-with open(r'C:\Users\daniel\Desktop\solubility_model\model.pkl', 'rb') as f:
+with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
    
-with open(r'C:\Users\daniel\Desktop\solubility_model\scaler.pkl','rb') as f:
+with open('scaler.pkl','rb') as f:
     scaler = pickle.load(f)
 #--------------------------------------------------------------------------------------------------------------
 # List of molecular discriptors used in the training set. These descriptors should also be used for the test set
