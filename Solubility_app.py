@@ -199,64 +199,41 @@ if option == 'Home':
 elif option == 'Developer_ID':
     st.title("DEVELOPER'S ID")
     st.markdown('This web app was built by Dr. Ngwu Comfort PhD and her project student Ottah Daniel Chukwuemeka Bsc.')
-
-    from PIL import Image
+     from PIL import Image
     import io
 
     def main():
+        st.title("Author's Profile")
+    # Display author 1
+        image_path1 = "Author_1.jpeg"
+        image1 = Image.open(image_path1)
+        image_bytes1 = io.BytesIO()
+        image1.save(image_bytes1, format='JPEG')
+        st.image(image_bytes1, caption="Author 1", use_column_width=True)
 
-        # Provide the local file path
-        image_path = r"C:\Users\daniel\Pictures\1656420086629.jpeg"
-
-        # Open the image using PIL
-        image = Image.open(image_path)
-
-        # Convert the image to bytes
-        image_bytes = io.BytesIO()
-        image.save(image_bytes, format='JPEG')
-
-        # Display the image using st.image
-        st.image(image_bytes, caption="Author 1", use_column_width=True)
         st.markdown('''
                     ## Ngwu Comfort, PhD (Environmental Chemistry).
                     ### Michael Okpara University of Agriculture, Umudike
                     ### Chemistry Department
                     ### kom4tngwu@gmail.com
-                    ### +234-803-214-5757
-                    
-                    ''')
+                    ### +234-803-214-5757''')
 
-
-    if __name__ == "__main__":
-        main()
-
-    def main():
-        
-        # Provide the local file path
-        image_path = r"C:\Users\daniel\Pictures\portfolio_picture.jpg"
-
-        # Open the image using PIL
-        image = Image.open(image_path)
-
-        # Convert the image to bytes
-        image_bytes = io.BytesIO()
-        image.save(image_bytes, format='JPEG')
-
-        # Display the image using st.image
-        st.image(image_bytes, caption="Author 2", use_column_width=True)
+        # Display author 2
+        image_path2 = "Author_2.jpg"
+        image2 = Image.open(image_path2)
+        image_bytes2 = io.BytesIO()
+        image2.save(image_bytes2, format='JPEG')
+        st.image(image_bytes2, caption="Author 2", use_column_width=True)
         st.markdown('''
                     ## Ottah Daniel Chukwuemeka, BSc.
                     ## Cheminformatics-Data-Scientist
                     ### Michael Okpara University of Agriculture, Umudike
                     ### Chemistry Department
                     ### danielottah6@gmail.com
-                    ### +234-704-508-5599
-                    
-                    ''')
+                    ### +234-704-508-5599''')
 
-
+        # ... (Rest of the code)
 
     if __name__ == "__main__":
         main()
-
 
