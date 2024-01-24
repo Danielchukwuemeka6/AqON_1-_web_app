@@ -81,7 +81,7 @@ if option == 'Home':
         st.pyplot(plt)
 
     # Read test data
-    test = pd.read_csv(r"C:\Users\daniel\Desktop\solubility_model\results.csv")
+    test = pd.read_csv('results.csv')
 
     # Assuming you have columns named 'Actual' and 'Predicted'
     actual_values = test['Actual']
