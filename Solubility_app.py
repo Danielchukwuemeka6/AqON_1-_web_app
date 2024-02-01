@@ -50,7 +50,7 @@ if option == 'Home':
 
 
     # Display my profile
-    st.markdown(""" This Web Application was developed by [Ngwu Comfort pHD & Ottah Daniel Chukwuemeka,BSc.] for Aqeous Solubility Prediction of Organic molecules""")
+    st.markdown(""" This Web Application was developed by [Ngwu Comfort PhD & Ottah Daniel Chukwuemeka BSc.] for aqueous solubility prediction of organic molecules""")
 
     # Define solubility and explain why it is important
     st.markdown('`Solubility`, a crucial concept, is defined as the maximum quantity of solute capable of dissolving in a specific volume of solvent to produce a saturated solution at a designated temperature—typically room temperature. A fundamental guiding principle is "like dissolves like," signifying that molecules sharing similar polarities and intermolecular forces exhibit a greater tendency to dissolve in one another.The significance of water solubility extends into the realm of drug discovery, directly impacting bioavailability.')
@@ -212,7 +212,7 @@ elif option == 'Developer_ID':
         st.image(image_bytes1, caption="Author 1", use_column_width=True)
 
         st.markdown('''
-                    ## Ngwu Comfort, PhD (Environmental Chemistry).
+                    ## Ngwu Comfort, PhD (Environmental Chemist).
                     ### Michael Okpara University of Agriculture, Umudike
                     ### Chemistry Department
                     ### kom4tngwu@gmail.com
@@ -226,7 +226,7 @@ elif option == 'Developer_ID':
         st.image(image_bytes2, caption="Author 2", use_column_width=True)
         st.markdown('''
                     ## Ottah Daniel Chukwuemeka, BSc.
-                    ## Cheminformatics-Data-Scientist
+                    ## Organic chemist,Cheminformatics-Data-Scientist
                     ### Michael Okpara University of Agriculture, Umudike
                     ### Chemistry Department
                     ### danielottah6@gmail.com
